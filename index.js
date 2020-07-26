@@ -17,8 +17,8 @@ var confirmLowerCase;
 function generatePassword() {
     var confirmLength = (prompt("How many charaters would you like your password to contain?"));
 
-    while(confirmLength <= 7 || confirmLength >= 40) {
-        alert("Password lenth must be between 8-40 charaters Try again");
+    while(confirmLength <= 7 || confirmLength >= 128) {
+        alert("Password lenth must be between 8-128 charaters Try again");
         var confirmLength = (prompt("How many charaters would you like your password to contain?"))
     }
 
